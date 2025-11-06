@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Plain Light";
+    src: url(./fonts/plain-regular-webfont.ttf);
+}
+
+@font-face {
+    font-family: "Plain Light";
+    src: url(./fonts/plain-light-webfont.ttf);
+}
+
+@font-face {
+    font-family: "silk serif";
+    src: url(./fonts/silkserif-regularitalic-webfont.ttf);
+}
+
+@font-face {
+    font-family: "silk serif";
+    src: url(./fonts/silkserif-lightitalic-webfont.ttf);
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Plain Light';
+    color: #fff;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #0B0B0B;
+    padding: 25vh 10vw;
+}
+.line{
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vw;
+}
+#line1-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2vw;
+}
+#line1-part1 h4,#line1-part1 h5{
+    font-size: 3vw;
+    font-family: 'Silk Serif';
+    font-weight: 100;
+}
+#line1-part1 h4{
+    width: 5vw;
+    text-align: right;
+}
+.line h1{
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.line h2{
+    font-size: 5vw;
+    font-weight: 500 ;
+    text-transform: uppercase;
+    animation: anime 2s infinite;
+    opacity: 0;
+
+}
+@keyframes anime {
+  0%{
+    font-family: "plain Light";
+    color: #fff;
+    font-weight: 500;
+    -webkit-text-stroke: 0.1px #fff;
+    opacity: 1;
+  }
+  45%{
+    font-family: "plain Light";
+    color: #fff;
+    font-weight: 500;
+    -webkit-text-stroke:1px #fff;
+    opacity: 0;
+  }
+  50%{
+    font-family: "Silk Serif";
+    color: transparent;
+    font-weight: 500;
+    -webkit-text-stroke:1px #fff;
+    opacity: 1;
+  }
+   100%{
+    font-family: "Silk Serif";
+    color: transparent;
+    font-weight: 500;
+    -webkit-text-stroke: 0.1px #fff;
+    opacity: 0;
+  }
+}
+
+#main{
+    position: relative;
+    background-color:#0B0B0B ;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+}
